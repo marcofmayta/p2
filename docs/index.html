@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de Métricas — Proyecto DS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f6f8fa;
+      color: #24292e;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid #e1e4e8;
+      overflow: hidden;
+    }
+    .header {
+      background: #24292e;
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+    .header h1 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+    .header p  { font-size: 0.85rem; color: #8b949e; }
+    .body { padding: 2rem; }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .metric-card {
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 1.2rem;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #0366d6;
+    }
+    .metric-label {
+      font-size: 0.8rem;
+      color: #6a737d;
+      margin-top: 0.3rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: white;
+      background: #28a745;
+      margin-top: 0.5rem;
+    }
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .info-table td {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #f1f3f4;
+    }
+    .info-table td:first-child { color: #6a737d; width: 40%; }
+    .info-table td:last-child { font-weight: 500; }
+    .footer {
+      padding: 1rem 2rem;
+      background: #f6f8fa;
+      border-top: 1px solid #e1e4e8;
+      font-size: 0.8rem;
+      color: #6a737d;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Reporte de Métricas del Modelo</h1>
+      <p>Generado automáticamente por GitHub Actions</p>
+    </div>
+    <div class="body">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">1.0000</div>
+          <div class="metric-label">Accuracy</div>
+          <span class="badge">Excelente</span>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">1.0000</div>
+          <div class="metric-label">F1 Macro</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">1.0000</div>
+          <div class="metric-label">ROC-AUC (OvR)</div>
+        </div>
+      </div>
+
+      <h3 style="margin-bottom: 1rem; font-size: 0.95rem; color: #6a737d;">
+        Detalles del experimento
+      </h3>
+      <table class="info-table">
+        <tr><td>Modelo</td><td>random_forest</td></tr>
+        <tr><td>N° estimadores</td><td>200</td></tr>
+        <tr><td>Muestras de test</td><td>30</td></tr>
+        <tr><td>Timestamp (UTC)</td><td>2026-05-31T12:38:33Z</td></tr>
+      </table>
+    </div>
+    <div class="footer">
+      Proyecto DS · Curso Git &amp; GitHub · Ing. Marco Mayta
+    </div>
+  </div>
+</body>
+</html>
