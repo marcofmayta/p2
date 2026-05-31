@@ -1,6 +1,6 @@
 import argparse
-import os
-import json
+# import os
+# import json
 import pickle
 from pathlib import Path
 
@@ -22,7 +22,7 @@ def cargar_datos(config: dict):
         iris = load_iris()
         X, y = iris.data, iris.target
     else:
-        #credenciales de os.environ en caso de necesitar conectarse a una base de datos
+        # credenciales de os.environ en caso de necesitar conectarse a una base de datos
         # db_password = os.environ.get("DB_PASSWORD", "")
         raise ValueError(f"Fuente de datos no reconocida: {source}")
 

@@ -1,13 +1,15 @@
 import argparse
 import json
-from datetime import datetime, timezone
+# from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
 
+
 def cargar_config(config_path: str) -> dict:
     with open(config_path, encoding="utf-8") as f:
         return yaml.safe_load(f)
+
 
 def generar_html(metricas: dict) -> str:
     timestamp_display = metricas.get("timestamp", "N/A")
